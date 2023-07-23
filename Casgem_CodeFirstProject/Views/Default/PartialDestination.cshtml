@@ -1,0 +1,41 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Destination>
+
+<section class="w3l-covers-18">
+    <div class="covers-main editContent">
+        <div class="container">
+            <div class="main-titles-head ">
+                <h3 class="header-name">
+                    Popüler Turlar
+                </h3>
+                <p class="tiltle-para editContent ">
+                    <br />
+                </p>
+            </div>
+            <div class="gallery-image row">
+                @foreach (var item in Model)
+                {
+                    if (item.Status == true)
+                    {
+                        <div class="col-lg-4 col-md-6">
+                            <div class="img-box">
+                                <img src="@item.ImageUrl" alt="product" class="img-responsive ">
+                                <h5 class="my-2"><a href="about.html">@item.DestinationName</a></h5>
+                                <div class="blog-date">
+                                    <p class="pos-date"><span class="fa fa-clock-o mr-1"></span>7 Days</p> <p class="pos-date text-right"><span class="fa fa-users mr-1"></span>Kapasite : @item.Capacity</p>
+                                </div>
+                                <p class="para">@item.Description</p>
+                                <div class="top-gap">
+                                    <h5>@item.Price</h5>
+                                    <a href="#url" class="icon text-center"><span class="fa fa-chevron-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                }
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

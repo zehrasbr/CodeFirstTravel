@@ -1,0 +1,59 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.About
+<section class="w3l-main-slider" id="home">
+    <div class="companies20-content">
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="item text-center">
+                <li>
+                    <div class="slider-info banner-view bg bg2" data-selector=".bg.bg2">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg mr-auto">
+                                    <h5>
+                                        <b> @ViewBag.Title</b>
+
+                                    </h5>
+                                    <h1>  <b><p>@ViewBag.Description</p></b></h1>
+                                    <a class="btn btn-theme2 mt-lg-5 mt-4" href="/Contact/Index">İletişime Geç</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <script src="~/Templates/go-trip-starter/assets/js/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true
+          }
+        }
+      })
+    })
+    </script>
+</section>
+

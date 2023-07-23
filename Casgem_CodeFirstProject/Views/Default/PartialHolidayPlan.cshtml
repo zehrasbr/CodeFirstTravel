@@ -1,0 +1,64 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Booking
+
+<section class="w3l-call-to-action_9">
+    <div class="call-w3">
+        <div class="container">
+            <div class="booking-form-content">
+                <div class="main-titles-head ">
+                    <h3 class="header-name">
+                       Tatilinizi Planlayın
+                    </h3>
+                    <p class="tiltle-para editContent ">Bir tatili hak etmediniz mi?</p>
+                </div>
+                <form  method="post" class="booking-form">
+                    <div class="row book-form">
+                        <div class="form-input col-md-4">
+                            <label>Ad Soyad</label>
+                            <input type="text" name="CustomerName" placeholder="Ad Soyad" required="">
+                        </div>
+                        <div class="form-input col-md-4">
+                            <label>Mail Adresi</label>
+                            <input type="email" name="Mail" placeholder="Mail Adresi" required="">
+                        </div>
+                        <div class="form-input col-md-4">
+                            <label>Ülke </label>
+                            <select name="Destination" class="selectpicker">
+                                <option value="">Any</option>
+                                <option value="Türkiye">Türkiye</option>
+                                <option value="Güney Kore">Güney Kore</option>
+                                <option value="Japonya">Japonya</option>
+                                <option value="Çin">Çin</option>
+                                <option value="Tayland">Tayland</option>
+                                <option value="İrlanda">İrlanda</option>
+                                <option value="Almanya">Almanya</option>
+                                <option value="Polonya">Polonya</option>
+                                <option value="Fransa">Fransa</option>
+                                <option value="İsviçre">İsviçre</option>
+                                <option value="Finlandiya">Finlandiya</option>
+                            </select>
+                        </div>
+                        <div class="form-input col-md-4 mt-3">
+                            <label>Gün</label>
+                            <select name="Duration" class="selectpicker">
+                                <option value="">Kaç Gün?</option>
+                                <option value="1">1 Gün</option>
+                                <option value="2">2-4 Gün</option>
+                                <option value="5">5-7 Gün</option>
+                                <option value="7">7+ Gün</option>
+                            </select>
+                        </div>
+                        <div class="form-input col-md-4 mt-3">
+                            <label>Tarih</label>
+                            <input type="date" name="BookingDate" placeholder="Tarih" required="">
+                        </div>
+                        <div class="bottom-btn col-md-4 mt-3">
+                            <label>Gönder</label>
+                            <button class="btn btn-style btn-primary w-100 btn-style">Gönder</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

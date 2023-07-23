@@ -1,0 +1,21 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Galery>
+<section class="w3l-services-two" id="services">
+    <div class="service-single-page editContent">
+        <div class="container">
+            <div class="gallery-image row">
+
+                @foreach (var item in Model)
+                {
+                    <div class="img-box col-lg-4 col-md-6">
+                        <img src="@item.ImageUrl" alt="product" class="img-responsive ">
+                        <h5 class="mt-2"><a href="#">@item.Title</a></h5>
+                        <p class="para">@item.Description</p>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+

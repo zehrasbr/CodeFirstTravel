@@ -1,0 +1,19 @@
+﻿<button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-chevron-up"></span>
+</button>
+<script>
+	window.onscroll = function () {
+		scrollFunction()
+	};
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("movetop").style.display = "block";
+		} else {
+			document.getElementById("movetop").style.display = "none";
+		}
+	}
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+</script>

@@ -1,0 +1,29 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Team>
+<section class="w3l-team-main-6" id="team">
+    <div class="team-content-page editContent ">
+        <div class="container">
+            <div class="row text-center">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-6 column">
+                        <a href="#url"><img class="img img-responsive" src="@item.ImageUrl" alt=""></a>
+                        <h4><a href="#url">@item.NameSurname</a></h4>
+                        <div class="w3l-team-7_bottom">
+                            <div class="w3l-team-7_bottom-left">
+                                <h6>@item.Title</h6>
+                            </div>
+                            <ul class="social_7 mt-3">
+                                @foreach (var item1 in item.MediaUrl)
+                                {
+                                    <li><a href="#instagram"><span class="@item1."></span></a></li>
+
+                                }
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Service>
+
+<section class="w3l-recent-work-hobbies" id="services">
+    <div class="recent-work editContent">
+        <div class="container">
+            <div class="row service-service">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-md-6 propClone about-line-top ">
+                        <div class="color-white editContent">
+                            <div class="icon-back"><span class="@item.Icon"></span></div>
+
+                            <h5>
+                                <a href="#" class="editContent">
+                                    @item.Title
+                                </a>
+                            </h5>
+                            <p class="para editContent">
+                                @item.Description
+                            </p>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+

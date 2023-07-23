@@ -1,0 +1,29 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Service>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hizmetler</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>İkon</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.Icon</td>
+            <td><a href="/AdminService/DeleteAdminService/@item.ServiceID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminService/UpdateAdminService/@item.ServiceID" class="btn btn-warning">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a class="btn btn-info" href="/AdminService/AddAdminService">Yeni Servis Ekle</a>

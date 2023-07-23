@@ -1,0 +1,42 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Place>
+<section class="w3l-specification-6">
+    <div class="specification-layout editContent">
+        <div class="container-fluid">
+            <div class="row text-left img-grids">
+                <div class="col-lg-6 p-0">
+                    @foreach (var item in Model)
+                    {
+                        if (item.Status == true)
+                        {
+                            <div class="images-right" style="background-image:url(@item.ImageUrl)">
+                                <div class="p-md-5 p-3">
+                                    <h4><a href="#url">@item.Title</a></h4>
+                                    <p>@item.Description</p>
+
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="four-grids">
+                        @foreach (var item in Model)
+                        {
+                            if (item.Status == false)
+                            {
+                                <div class="images-text">
+                                    <div class="ser-bg3" style="background-image:url(@item.ImageUrl)">
+                                        <div class="p-md-5 p-3">
+                                            <h4><a href="#url">@item.Title</a></h4>
+                                            <p>@item.Description</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

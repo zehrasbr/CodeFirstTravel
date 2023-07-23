@@ -1,0 +1,33 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.Booking>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+<h2>Anasayfa</h2>
+<br />
+<h3>Tatil Başvuruları</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Nereye</th>
+        <th>Kaç Gün</th>
+        <th>Mail</th>
+        <th>Başvuru Tarihi</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+    <tr>
+        <td>@count</td>
+        <td>@item.CustomerName</td>
+        <td>@item.Destination</td>
+        <td>@item.Duration</td>
+        <td>@item.Mail</td>
+        <td>@(((DateTime)item.BookingDate).ToString("dd-MM-yyyy"))</td>
+    </tr>
+    }
+</table>
+

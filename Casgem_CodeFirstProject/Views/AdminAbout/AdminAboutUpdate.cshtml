@@ -1,0 +1,18 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.About
+@{
+    ViewBag.Title = "AdminAboutUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Hakkımda(Giriş) Düzenleme Sayfası</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.AboutID)
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x => x.Description,6,3, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+</form>
+

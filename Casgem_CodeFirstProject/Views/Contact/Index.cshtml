@@ -1,0 +1,53 @@
+﻿@model Casgem_CodeFirstProject.DAL.Entities.Contact
+
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+    @Html.Action("PartialHead", "Default")
+<body id="home">
+    @Html.Action("PartialNavbar", "Default")
+    @Html.Action("PartialScript", "About")
+    @Html.Action("PartialMainPage", "About")
+
+    <section class="w3l-contact-info-main" id="contact">
+        <div class="contact-sec	editContent">
+            <div class="container">
+                <div class="map-content-9 mb-5 ">
+                    <form method="post">
+                        <div class="twice-two">
+                            <input type="text" class="form-control" name="NameSurname" placeholder="Ad Soyad" required="">
+                            <input type="email" class="form-control" name="Mail" placeholder="Email" required="">
+                            <input type="text" class="form-control" name="Subject" placeholder="Konu" required="">
+                        </div>
+                        <textarea name="Message" class="form-control" placeholder="Mesaj" required=""></textarea>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-contact">Mesajı Gönder</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    @Html.Action("Map")
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5 ">
+            <div class="container">
+                <div class="grid-col-4 footer-top-29">
+                    <div class="footer-list-29 footer-1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    @Html.Action("PartialFooter", "Default")
+</body>
+
+</html>
+

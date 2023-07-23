@@ -1,0 +1,9 @@
+﻿@model List<Casgem_CodeFirstProject.DAL.Entities.ContactSocial>
+
+<div class="main-social-footer-29">
+    @foreach (var item in Model)
+    {
+        <a href="@item.ContactSocialURL" class="facebook"><span class="@item.ContactSocialIcon"></span></a>
+    }
+
+</div>
