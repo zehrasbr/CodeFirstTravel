@@ -1,3 +1,7 @@
+Travel plans is a dynamic web project with admin panel where we can book.
+Technologies I Use: Asp.Net Mvc5, C#, MSSQL, Entity Framework, Code First, Html, Css, Bootstrap
+
+
 ![image](https://github.com/zehrasbr/CodeFirstTravel/assets/120209419/c7ba1594-3242-4ced-88e7-74c3e4e0e4bd)
 ![image](https://github.com/zehrasbr/CodeFirstTravel/assets/120209419/99f8d194-62ba-4542-a4dd-b8f618de7e9c)
 ![image](https://github.com/zehrasbr/CodeFirstTravel/assets/120209419/ea2382a6-03a1-4a86-8ae9-0301949c2e0b)
